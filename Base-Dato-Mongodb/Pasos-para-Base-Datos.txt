@@ -1,0 +1,127 @@
+CONSOLA
+mongo
+use tienda
+show collections
+	articulos
+	usuarios
+
+--INSERTAR
+
+db.usuarios.insert([{"user" : "hector@mail.com", "pass" : "hector", "nombre" : "Hector"},{"user" : "jose@mail.com", "pass" : "jose", "nombre" : "Jose"}])
+      
+--VALIDAR
+db.usuarios.find({})
+
+--INSERTAR
+db.articulos.insert([{
+  "imagen" : "aguacate.jpg",
+  "precio" : 5,
+  "producto" : "Aguacate",
+  "unidades" : 45
+}, {
+  "imagen" : "ajo.jpg",
+  "precio" : 2,
+  "producto" : "Ajo",
+  "unidades" : 77
+}, {
+  "imagen" : "almendras.jpg",
+  "precio" : 2,
+  "producto" : "Almendras",
+  "unidades" : 30
+}, {
+  "imagen" : "arandanos.jpg",
+  "precio" : 2,
+  "producto" : "Ar�ndanos",
+  "unidades" : 30
+}, {
+  "imagen" : "brocoli.png",
+  "precio" : 2,
+  "producto" : "Brocoli",
+  "unidades" : 30
+}, {
+  "imagen" : "calabaza.jpg",
+  "precio" : 2,
+  "producto" : "Calabaza",
+  "unidades" : 30
+}, {
+  "imagen" : "canela.jpg",
+  "precio" : 2,
+  "producto" : "Canela",
+  "unidades" : 30
+}, {
+  "imagen" : "cebolla.jpg",
+  "precio" : 2,
+  "producto" : "Cebolla",
+  "unidades" : 30
+}, {
+  "imagen" : "fresa.jpg",
+  "precio" : 2,
+  "producto" : "Fresa",
+  "unidades" : 30
+}, {
+  "imagen" : "kiwi.jpg",
+  "precio" : 2,
+  "producto" : "Kiwi",
+  "unidades" : 30
+}, {
+  "imagen" : "limon.jpg",
+  "precio" : 2,
+  "producto" : "Limon",
+  "unidades" : 30
+}, {
+  "imagen" : "lychee.jpg",
+  "precio" : 2,
+  "producto" : "Lychee",
+  "unidades" : 30
+}, {
+  "imagen" : "maiz.jpg",
+  "precio" : 2,
+  "producto" : "Maiz",
+  "unidades" : 30
+}, {
+  "imagen" : "manzana.jpg",
+  "precio" : 2,
+  "producto" : "Manzana",
+  "unidades" : 30
+}, {
+  "imagen" : "naranja.jpg",
+  "precio" : 2,
+  "producto" : "Naranja",
+  "unidades" : 30
+}, {
+  "imagen" : "papa.jpg",
+  "precio" : 2,
+  "producto" : "Papa",
+  "unidades" : 30
+}, {
+  "imagen" : "pasta.jpg",
+  "precio" : 2,
+  "producto" : "Pasta",
+  "unidades" : 30
+}, {
+  "imagen" : "pimienta.jpg",
+  "precio" : 2,
+  "producto" : "Pimienta",
+  "unidades" : 30
+}, {
+  "imagen" : "repollo.jpg",
+  "precio" : 2,
+  "producto" : "Repollo",
+  "unidades" : 30
+}, {
+  "imagen" : "tomate.jpg",
+  "precio" : 2,
+  "producto" : "Tomate",
+  "unidades" : 30
+}, {
+  "imagen" : "zanahoria.jpg",
+  "precio" : 2,
+  "producto" : ">anahoria",
+  "unidades" : 30
+}]
+)
+
+--VALIDAR
+db.articulos.find({})
+
+
